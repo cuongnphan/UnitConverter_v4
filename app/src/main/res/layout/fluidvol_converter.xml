@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/white"
+        android:text="Convert"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_baseline_sync_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="440dp"
+        android:text="Result"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="440dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fluid Volume Converter"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdFrom"
+        android:layout_width="160dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/lblConvertFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From" />
+
+        <RadioButton
+            android:id="@+id/rdFromLiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liter (l)" />
+
+        <RadioButton
+            android:id="@+id/rdFromMilliliter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Milliliter (ml)" />
+
+        <RadioButton
+            android:id="@+id/rdFromGallon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gallon (gal)" />
+
+        <RadioButton
+            android:id="@+id/rdFromQuart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quart (qt)" />
+
+        <RadioButton
+            android:id="@+id/rdFromFluidOunce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fluid Ounce (fl. oz.)" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rdTo"
+        android:layout_width="165dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="000dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="00dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rdFrom"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/lblConvertTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To" />
+
+        <RadioButton
+            android:id="@+id/rdToLiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liter (l)" />
+
+        <RadioButton
+            android:id="@+id/rdToMilliliter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Milliliter (ml)" />
+
+        <RadioButton
+            android:id="@+id/rdToGallon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gallon (gal)" />
+
+        <RadioButton
+            android:id="@+id/rdToQuart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quart (qt)" />
+
+        <RadioButton
+            android:id="@+id/rdToFluidOunce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fluid Ounce (fl. oz.)" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
